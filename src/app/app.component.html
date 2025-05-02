@@ -1,0 +1,17 @@
+<!-- <app-header></app-header>
+<app-chart></app-chart>
+<router-outlet></router-outlet> -->
+
+<!-- 3 -->
+<app-header></app-header>
+
+<div style="text-align:center; padding: 1rem 0; background-color: #fffaf1;">
+  <label for="chartType"><strong >Select Chart Type : </strong> </label>
+  <select  id="chartType" (change)="onChartTypeChange($event)">
+    <option *ngFor="let type of chartTypes" [value]="type">{{ type }}</option>
+  </select>
+</div>
+
+<app-chart  [chartData]="sampleData" [chartType]="selectedChartType"></app-chart>
+
+<router-outlet ></router-outlet>
