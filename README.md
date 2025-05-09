@@ -82,7 +82,8 @@ To run the application and view the chart, I used:
 ```bash
 ng serve
 ```
-
+### 6.**Output of the Echarts app**
+- ![alt text](image.png)
 
 ### 5  . **Push to GitHub**	
 ```bash
